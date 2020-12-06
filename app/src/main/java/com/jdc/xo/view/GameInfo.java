@@ -7,15 +7,15 @@ import javax.swing.JPanel;
 import java.awt.FlowLayout;
 
 /**
- * Esta clase se usa para representar el panel de informacion y avance del juego.
- * En este panel se muestra el nombre del jugador, el avatar correspondiente y el
- * numero de juegos ganados por cada jugador.
+ * Esta clase se usa para representar el panel de informacion y avance del
+ * juego. En este panel se muestra el nombre del jugador, el avatar
+ * correspondiente y el numero de juegos ganados por cada jugador.
  * 
  * @author jhon fernandez
  * @version 1.0
  */
 public class GameInfo extends JPanel {
-    
+
     /**
      * Widget usado para mostrar el nombre del jugador.
      */
@@ -42,9 +42,11 @@ public class GameInfo extends JPanel {
     private GamePoints pointsView;
 
     /**
-     * El constructor inicia con los datos del primer jugador y el vatar correspondiente.
+     * El constructor inicia con los datos del primer jugador y el vatar
+     * correspondiente.
+     * 
      * @param initialGamer nombre del jugador.
-     * @param initialIcon avatar del jugador.
+     * @param initialIcon  avatar del jugador.
      */
     public GameInfo(String initialGamer, Icon initialIcon) {
         super(new FlowLayout());
@@ -54,12 +56,13 @@ public class GameInfo extends JPanel {
     }
 
     /**
-     * Este metodo se encarga de inicializar y agregar los componentes visuales del panel de informacion.
+     * Este metodo se encarga de inicializar y agregar los componentes visuales del
+     * panel de informacion.
      */
     private void paintWidgets() {
         this.gamerLabel = new JLabel();
         this.add(this.gamerLabel);
-        
+
         this.gamerIcon = new JLabel();
         this.add(this.gamerIcon);
 
@@ -71,6 +74,7 @@ public class GameInfo extends JPanel {
 
     /**
      * Este metodo devuelve el nombre del jugador actual
+     * 
      * @return nombre del jugador actual.
      */
     public String getGamer() {
@@ -78,7 +82,9 @@ public class GameInfo extends JPanel {
     }
 
     /**
-     * Este metodo se encarga de cambiar el nombre del jugador el el panel de informacion
+     * Este metodo se encarga de cambiar el nombre del jugador el el panel de
+     * informacion
+     * 
      * @param gamer nombre del jugador.
      */
     public void setGamer(String gamer) {
@@ -88,6 +94,7 @@ public class GameInfo extends JPanel {
 
     /**
      * Este metodo devuelve el avatar que identifica al jugador actual
+     * 
      * @return avatar del jugador.
      */
     public Icon getIcon() {
@@ -96,6 +103,7 @@ public class GameInfo extends JPanel {
 
     /**
      * Este metodo es el encargado de establecer el avatar del jugador
+     * 
      * @param icon avatar del jugador actual.
      */
     public void setIcon(Icon icon) {
@@ -106,6 +114,7 @@ public class GameInfo extends JPanel {
     /**
      * Se devuelve el visor de jugadas en donde se encuentra la cantidad de jugadas
      * ganadas por cada jugador.
+     * 
      * @return visor de jugadas
      */
     public GamePoints getPointsView() {
