@@ -30,11 +30,11 @@ public class GamePanel extends JPanel {
     }
 
     /**
-     * Este metodo se encarga de inicializar todos los botones de acuerdo
-     * a las coordenadas de la matriz.
+     * Este metodo se encarga de inicializar todos los botones de acuerdo a las
+     * coordenadas de la matriz.
      */
     private void initializeButtons() {
-        for(byte row = 0; row < 9; row++) {
+        for (byte row = 0; row < 9; row++) {
             this.buttons.add(new JButton());
         }
     }
