@@ -1,32 +1,45 @@
 package com.jdc.xo.view;
 
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import java.awt.FlowLayout;
 
 public class GamePoints extends JPanel {
     
-    private String xGamePoints;
-    private String oGamerPoints;
+    private JLabel xGamerPoints;
+    private JLabel oGamerPoints;
 
     public GamePoints() {
         super(new FlowLayout());
+        this.paintWidgets();
+    }
+
+    private void paintWidgets() {
+        this.xGamerPoints = new JLabel();
+        this.add(this.xGamerPoints);
+
+        JLabel separator = new JLabel(" - ");
+        this.add(separator);
+
+        this.oGamerPoints = new JLabel();
+        this.add(this.oGamerPoints);
     }
 
     public String getxGamePoints() {
-        return this.xGamePoints;
+        return this.xGamerPoints.getText();
     }
 
     public void setxGamePoints(String xGamePoints) {
-        this.xGamePoints = xGamePoints;
+        this.xGamerPoints.setText(xGamePoints);;
     }
 
     public String getoGamerPoints() {
-        return this.oGamerPoints;
+        return this.oGamerPoints.getText();
     }
 
     public void setoGamerPoints(String oGamerPoints) {
-        this.oGamerPoints = oGamerPoints;
+        this.oGamerPoints.setText(oGamerPoints);;
     }
 
     
