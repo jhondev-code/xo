@@ -9,6 +9,7 @@ public class GameInfo extends JPanel {
     
     private String gamer;
     private Icon icon;
+    private GamePoints pointsView;
 
     public GameInfo() {
         super(new FlowLayout());
@@ -28,6 +29,10 @@ public class GameInfo extends JPanel {
 
     public void setIcon(Icon icon) {
         this.icon = icon;
+    }
+
+    public GamePoints getPointsView() {
+        return this.pointsView;
     }
 
 }
